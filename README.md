@@ -1,6 +1,6 @@
 # DOM-tehtävät
 
-Lataa tämä repo zip-pakettina klikkaamalla 'clone or download' -painiketta.
+Aloita lataamalla tämä repo zip-pakettina omalle koneellesi klikkaamalla 'clone or download' -painiketta.
 
 ### Tehtävä A, CSS
 1. Editoi CSS-koodia opettajan ohjeiden mukaisesti.
