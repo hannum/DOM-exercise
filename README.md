@@ -1,41 +1,40 @@
-# DOM-exercise
+# DOM-tehtävät
 
-Use 'clone or download' button to download this repo as zip.
+Lataa tämä repo zip-pakettina klikkaamalla 'clone or download' -painiketta.
 
-### Task A, CSS
-1. Edit the CSS by following techer's instructions.
-
-### Task B, [JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp)
-1. Create new file task-b.html
-1. Copy the content of index.html and paste it to task-b.html
-1. Change the src of `<script>` element to main-b.js
-1. Add another `<article>` element to `<main>` by modifying js/main-b.js:
-   * The new `<article>` element should containt the same elements as the existing `<article>` element
-   * Select `<main>` element with [DOM-methods](https://www.w3schools.com/js/js_htmldom_elements.asp)
-   * Use [innerHTML](https://www.w3schools.com/js/js_htmldom_html.asp) property to add the new `<article>` element to `<main>`element.
-   * Note that you need to use `+=` operator to add.
-   * If you want to make a multiline string for the HTML, you need to use + operator or create a [template string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+### Tehtävä A, CSS
+1. Editoi CSS-koodia opettajan ohjeiden mukaisesti.
    
-### Task C, [JavaScript HTML DOM Elements](https://www.w3schools.com/js/js_htmldom_nodes.asp)
-1. Create new file task-c.html
-1. Copy the content of index.html and paste it to task-c.html
-1. Change the src of `<script>` element to main-c.js
-1. Add another `<article>` element to `<main>`:
-   * The new `<article>` element should containt the same elements as the existing `<article>` element
-   * Select `<main>` element with [DOM-methods](https://www.w3schools.com/js/js_htmldom_elements.asp)
-   * Use DOM methods (createElement, appendChild) to add the new `<article>` element to `<main>` element.
+### Tehtävä B, [JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp)
+1. Tee uusi tiedosto task-b.html
+1. Kopioi index.html tiedoston sisältö ja liitä se task-b.html tiedostoon
+1. Vaihda `<script>` elementin src-attribuutin arvoksi main-b.js
+1. Lisää tiedoston js/main-b.js `<main>` elementtiin toinen `<article>` elementti:
+   * Uusi `<article>` elementti sisältää samat elementit kuin valmiina oleva `<article>` elementti 
+   * Valitse `<main>` elementti käyttäen [DOM-metodeja](https://www.w3schools.com/js/js_htmldom_elements.asp)
+   * Käytä [innerHTML](https://www.w3schools.com/js/js_htmldom_html.asp) ominaisuutta lisätessäsi `<article>` elementin `<main>` elementtiin.
+   * Huomaa, että sinun on käytettävä `+=` operaattoria lisäyksessä.
+   * Jos haluat sisällyttää HTML:än useamman rivin pituisen merkkijonon, käytä + operaattoria tai tee [template string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
    
-### Task D, content from array by [iterating](https://www.w3schools.com/js/js_loop_for.asp)
-1. Create new file task-d.html
-1. Copy the content of index.html and paste it to task-d.html
-1. Change the src of `<script>` element to main-d.js
-1. Delete the `<article>` element from `<main>` in your editor.
-1. Add `<article>` elements to `<main>` by iterating picArray with for loop (main-d.js).
-   * The new `<article>` elements should containt the same elements as the existing `<article>` element
-   * Select `<main>`element with DOM-methods
-   * Use DOM methods (createElement, appendChild) or innerHTML property to add the new `<article>` elements to `<main>`element.
-      * put title to `<h2>` and `<img>` element's alt attribute
-      * put caption to `<caption>` element
-      * put filename to `<img>` element's src attribute
-      * put description to `<p>` element 
+### Tehtävä C, [JavaScript HTML DOM Elements](https://www.w3schools.com/js/js_htmldom_nodes.asp)
+1. Tee uusi tiedosto task-c.html
+1. Kopioi tiedoston index.html sisältö ja liitä se tiedostoon task-c.html
+1. Vaihda `<script>`-elementin src-attribuutin arvoksi main-c.js
+1. Lisää uusi `<article>`-elementti `<main>`-elementtiin:
+   * Uusi `<article>` elementti sisältää samat elementit kuin valmiina oleva `<article>` elementti 
+   * Valitse `<main>` elementti käyttäen [DOM-metodeja](https://www.w3schools.com/js/js_htmldom_elements.asp)
+   * Käytä DOM metodeja (createElement, appendChild) lisätessäsi `<article>` elementin `<main>` elementtiin.
 
+### Tehtävä D, HTML sisällön lisääminen taulukosta [iteroimalla](https://www.w3schools.com/js/js_loop_for.asp)
+1. Tee uusi tiedosto task-d.html
+1. Kopioi tiedoston index.html sisältö ja liitä se tiedostoon task-d.html
+1. Vaihda `<script>`-elementin src-attribuutin arvoksi main-d.js
+1. Poista `<article>` elementti `<main>` elementistä.
+1. Lisää `<article>` elementti `<main>` elementtiin iteroimalla picArray toistorakennetta käyttäen (main-d.js).
+   * Uusi `<article>` elementti sisältää samat elementit kuin valmiina oleva `<article>` elementti
+   * Valitse `<main>`elementti DOM-metodeja käyttäen
+   * Käytä DOM-metodeja (createElement, appendChild) tai innerHTML-ominaisuutta lisätäksesi `<article>` elementin `<main>`elementtiin.
+      * Lisää otsikko `<h2>` elementtiin ja `<img>` elementin alt-attribuuttiin
+      * Lisää seloste `<caption>` elementtiin
+      * Lisää tiedostopolku `<img>` elementin src-attribuuttiin
+      * Lisää kuvaus `<p>` elementtiin
