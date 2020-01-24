@@ -22,11 +22,16 @@ header {
 main {
     background-color: #fff;
     padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 article {
+    /* width: calc(100% / 3 - 2rem); */
     width: 30%;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 article header {
@@ -43,6 +48,10 @@ article h2 {
 figure {
     margin: 0;
     text-align: center;
+}
+
+figure img {
+    width: 100%;
 }
 
 figcaption {
