@@ -23,7 +23,7 @@ Yllä olevassa esimerkissä valittu p-elementti tallennetaan elementtioliona (ta
 ## Parent/child
 ![DOM](https://www.w3schools.com/js/pic_htmltree.gif) 
 
-Koska DOM kuvaa dokumentin puumaisena rakenteena, käytetään sen yhteydessä termejä vanhempi (tai äiti/isä), lapsi, ja sisar. Englanniksi parent, child ja sibling. Esim. ylläolevassa kuvassa h1-elementti on body-elementin lapsi ja a-elementin sisar. Vastaavasti body-elementti on sekä h1- ja a-elementtien vanhempi.
+Koska DOM kuvaa dokumentin puumaisena rakenteena, käytetään sen yhteydessä termejä vanhempi (tai äiti/isä), lapsi, ja sisarus. Englanniksi parent, child ja sibling. Esim. ylläolevassa kuvassa h1-elementti on body-elementin lapsi ja a-elementin sisarus. Vastaavasti body-elementti on sekä h1- ja a-elementtien vanhempi.
 
 ## [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)-rajapinta
 `document`-rajapinta edustaa web-sivua, sen sisällä ovat kaikki muut dokumentin objektit. Kun haluat valita dokumentista minkä tahansa HTML-elementin, sinun tulee aloittaa document-rajapinnasta. Esim. `document.getElementByID('logo')`
@@ -39,7 +39,7 @@ solmu.getElementsByTagName("p")     // hakee solmu-nodesta kaikki p-elementit
 solmu.appendChild(lapsi)            // lisää solmu-nodeen lapsinoden
 solmu.removeChild(lapsi)            // poistaa solmu-nodesta lapsinoden
 ```
-Koska document-rajapinta perii [Node](https://developer.mozilla.org/en-US/docs/Web/API/Node)- ja [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)-rajapinnat, itse asiassa tärkeimmät ominaisuudet tulevat niistä sekä [ParnetNode](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode)-rajapinnasta:
+Koska document-rajapinta perii [Node](https://developer.mozilla.org/en-US/docs/Web/API/Node)- ja [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)-rajapinnat, itse asiassa tärkeimmät ominaisuudet tulevat niistä sekä [ParentNode](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode)-rajapinnasta:
 ```javascript
 elem.innerHTML   // elem-noden sisältämä HTML-koodi
 elem.innerText   // elem-noden sisältämä teksti
@@ -71,7 +71,7 @@ document.scripts    // hakee kaikki script-elementit
     // sama voidaan kirjoittaa myös ilman välimuuttujaa
     const p = document.getElementById('uutiset').getElementsByTagName("p");
  
-    // tai yhdellä komennolla
+    // tai yhdellä komennolla käyttäen CSS-valitsinta
     const p = document.querySelectorAll('#uutiset p');
     ```
 1. Valitse listan `<ul>` toinen  nimike (item eli `<li>`):  
@@ -84,7 +84,8 @@ document.scripts    // hakee kaikki script-elementit
     ```
     
     ```javascript
-    const toka = document.getElementsByTagName('li')[1];  // getElementsByTagname palauttaa taulukon. Talukon järjestysnumerot alkavat nollasta, joten 1 tarkoittaa toista <li>-elementtiä.
+    const toka = document.getElementsByTagName('li')[1];  // getElementsByTagname palauttaa taulukon. Taulukon järjestysnumerot alkavat nollasta, joten 1 tarkoittaa toista <li>-elementtiä.
+    const toka = document.querySelectorAll('li')[1];      // Sama querySelectorAll-metodilla
     ```
 
 1. Elementtilista kaikista "tiedote"-luokkaan kuuluvista p-elementeistä:   
@@ -172,12 +173,15 @@ Class attribuutin muokkaaminen:
 <p class="punainen" id="kappale">Jotain tekstiä</p>
 
 <script>
+// Vaihdetaan siniseksi
 document.querySelector('#kappale').setAttribute('class', 'sininen');
-// tai
+// poistetaan sininen
 document.querySelector('#kappale').classList.toggle('sininen');
+// Korvataan sininen punaisella
+document.querySelector('#kappale').classList.replace('sininen', 'punainen');
 </script>
 ```
-[classList-dokumentaatio](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+Lisää metodeja class-attribuuttien käsittelyyn, katso [classList-dokumentaatio](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList).
 
 
 # DOM-tehtävät
