@@ -209,6 +209,7 @@ tehtävien projektisi ovat.
    * Uusi `<article>`-elementti sisältää samat elementit kuin valmiina oleva `<article>`-elementti 
    * Valitse `<main>`-elementti käyttäen [DOM-metodeja](https://www.w3schools.com/js/js_htmldom_elements.asp)
    * Käytä DOM-metodeja (createElement, appendChild) lisätessäsi `<article>`-elementin `<main>`-elementtiin.
+   * Tekstinodetn tekemisessä voit kokeilla eri vaihtoehtoja (createTextNode-metodi tai elementin innerText ja innerHTML-ominaisuudet).
 
 ### Tehtävä D, HTML sisällön lisääminen taulukosta [iteroimalla](https://www.w3schools.com/js/js_loop_for.asp)
 1. Tee uusi tiedosto task-d.html
