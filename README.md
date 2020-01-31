@@ -190,7 +190,7 @@ Lisää metodeja class-attribuuttien käsittelyyn, katso [classList-dokumentaati
 Lataa tämä repo zip-pakettina omalle koneellesi klikkaamalla 'clone or download' -painiketta. Pura se hakemistoon, jossa
 tehtävien projektisi ovat.
    
-### Tehtävä B, [JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp) (3p.)
+### Tehtävä B, [JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp) (4p.)
 1. Tee uusi tiedosto task-b.html
 1. Kopioi index.html tiedoston sisältö ja liitä se task-b.html tiedostoon
 1. Vaihda `<script>` elementin src-attribuutin arvoksi main-b.js
