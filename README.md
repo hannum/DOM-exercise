@@ -86,6 +86,12 @@ document.scripts    // hakee kaikki script-elementit
     ```javascript
     const toka = document.getElementsByTagName('li')[1];  // getElementsByTagname palauttaa taulukon. Taulukon järjestysnumerot alkavat nollasta, joten 1 tarkoittaa toista <li>-elementtiä.
     const toka = document.querySelectorAll('li')[1];      // Sama querySelectorAll-metodilla
+    
+    // Käydään läpi kaikki <li>-elementit forEach-metodin avulla (lihavoidaan teksti)
+    const bullets = document.querySelectorAll('ul li');
+            bullets.forEach(bullet => {
+              bullet.innerHTML = `<b>${bullet.innerHTML}</b>`;
+            })
     ```
 
 1. Elementtilista kaikista "tiedote"-luokkaan kuuluvista p-elementeistä:   
