@@ -201,10 +201,10 @@ tehtävien projektisi ovat.
 1. Kopioi index.html tiedoston sisältö ja liitä se task-b.html tiedostoon
 1. Vaihda `<script>` elementin src-attribuutin arvoksi main-b.js
 1. Lisää HTML-sivun `<main>`-elementtiin toinen `<article>`-elementti muokkaamalla tiedostoa js/main-b.js:
-   * Uusi `<article>`-elementti sisältää samat elementit kuin valmiina oleva `<article>`-elementti 
+   * Uusi `<article>`-elementti sisältää samat elementit kuin valmiina oleva `<article>`-elementti. Tee uudet elementit HTML merkkijonona (älä käytä valmiina olevan elementin `innerHTML`-ominaisuutta).
    * Valitse `<main>`-elementti käyttäen [DOM-metodeja](https://www.w3schools.com/js/js_htmldom_elements.asp)
    * Käytä [innerHTML](https://www.w3schools.com/js/js_htmldom_html.asp)-ominaisuutta lisätessäsi `<article>`-elementin `<main>`-elementtiin.
-   * Huomaa, että sinun on käytettävä `+=`-operaattoria lisäyksessä.
+   * Huomaa, että sinun on käytettävä `+=`-operaattoria lisäyksessä
    * Jos haluat sisällyttää HTML:än useamman rivin pituisen merkkijonon, käytä `+`-operaattoria tai tee [template string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
    
 ### Tehtävä C, [JavaScript HTML DOM Elements](https://www.w3schools.com/js/js_htmldom_nodes.asp) (5p.)
@@ -212,10 +212,10 @@ tehtävien projektisi ovat.
 1. Kopioi tiedoston index.html sisältö ja liitä se tiedostoon task-c.html
 1. Vaihda `<script>`-elementin src-attribuutin arvoksi main-c.js
 1. Lisää uusi `<article>`-elementti `<main>`-elementtiin:
-   * Uusi `<article>`-elementti sisältää samat elementit kuin valmiina oleva `<article>`-elementti 
+   * Uusi `<article>`-elementti sisältää samat elementit kuin valmiina oleva `<article>`-elementti. Tee nämä käyttäen DOM-metodia ja luotujen elementtien ominaisuuksia.
    * Valitse `<main>`-elementti käyttäen [DOM-metodeja](https://www.w3schools.com/js/js_htmldom_elements.asp)
-   * Käytä DOM-metodeja (createElement, appendChild) lisätessäsi `<article>`-elementin `<main>`-elementtiin.
-   * Tekstinoden tekemisessä voit kokeilla eri vaihtoehtoja (createTextNode-metodi tai elementtiolion innerText ja innerHTML-ominaisuudet).
+   * Käytä DOM-metodeja lisätessäsi `<article>`-elementin `<main>`-elementtiin
+   * Tekstinoden tekemisessä voit kokeilla eri vaihtoehtoja (`createTextNode`-metodi tai elementtiolion `innerText`- ja `innerHTML`-ominaisuudet).
 
 ### Tehtävä D, HTML sisällön lisääminen taulukosta [iteroimalla](https://www.w3schools.com/js/js_loop_for.asp) (7p.)
 1. Tee uusi tiedosto task-d.html
@@ -225,7 +225,7 @@ tehtävien projektisi ovat.
 1. Lisää `<article>`-elementti `<main>`-elementtiin iteroimalla picArray (käyttäen toistorakennetta tiedostossa main-d.js).
    * Uusi `<article>`-elementti sisältää samat elementit kuin valmiina oleva `<article>`-elementti
    * Valitse `<main>`-elementti DOM-metodeja käyttäen
-   * Käytä DOM-metodeja (createElement, appendChild) tai innerHTML-ominaisuutta lisätäksesi `<article>`-elementin `<main>`-elementtiin.
+   * Käytä DOM-metodeja tai `innerHTML`-ominaisuutta lisätäksesi `<article>`-elementin `<main>`-elementtiin.
       * Lisää otsikko `<h2>`-elementtiin ja `<img>`-elementin alt-attribuuttiin
       * Lisää seloste `<caption>`-elementtiin
       * Lisää tiedostopolku `<img>`-elementin src-attribuuttiin
